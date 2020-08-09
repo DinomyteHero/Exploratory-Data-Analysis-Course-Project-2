@@ -10,7 +10,7 @@ coal_sum_data$Emissions <- coal_sum_data$Emissions/100
 #Created the plot using ggplot
 coal_plot <- ggplot(data = coal_sum_data, aes(year, Emissions))
 coal_plot + geom_point(size = 3.5) + geom_line(color = "blue", size = 0.5)
-coal_plot <- coal_plot + geom_point(size = 3.5) + geom_line(color = "blue", size = 0.5)
+coal_plot <- coal_plot + geom_point(size = 3.5) + geom_line(color = "blue", size = 0.5) + labs(x="Year" ,title = "Coal Emissions in USA per year")
 
 coal_plot
 #Saved the ggplot as an png
